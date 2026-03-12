@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiCyS 2026 Schedule</title>
+    
+    <script type="module">
+        import 'https://cdn.skypack.dev/@material/web/button/filled-button.js';
+        import 'https://cdn.skypack.dev/@material/web/button/outlined-button.js';
+        import 'https://cdn.skypack.dev/@material/web/iconbutton/icon-button.js';
+        import 'https://cdn.skypack.dev/@material/web/tabs/tabs.js';
+        import 'https://cdn.skypack.dev/@material/web/tabs/primary-tab.js';
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="styles.css" rel="styesheet">
+</head>
+<body>
+
+<div class="app-bar">
+    <h1>WiCyS 2026</h1>
+    <div id="status-msg" style="font-size: 0.7rem; color: #999;"></div>
+</div>
+
+<div class="container">
+    <md-tabs id="day-tabs"></md-tabs>
+    <div id="session-list"></div>
+</div>
+
+<div class="footer-nav">
+    <md-outlined-button id="prev-btn" onclick="changeDay(-1)">
+        <span slot="icon" class="material-symbols-outlined">chevron_left</span> Previous
+    </md-outlined-button>
+    <md-outlined-button id="next-btn" onclick="changeDay(1)">
+        Next <span slot="icon" class="material-symbols-outlined">chevron_right</span>
+    </md-outlined-button>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
