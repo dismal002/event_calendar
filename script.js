@@ -1,4 +1,4 @@
-const JSON_PATH = 'https://gist.githubusercontent.com/dismal002/0b7468c8472ddb1f78071d305ff6b5ed/raw/c3eb3d73fa90e5cbfaddab6de3f3284ccf997053/gistfile1.txt';
+const JSON_PATH = 'agenda.json';
 let agendaData = [];
 let activeDays = [];
 let activeDayIndex = 0;
